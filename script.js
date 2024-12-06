@@ -22,3 +22,7 @@ welcome.addEventListener("mouseover", () => {
 welcome.addEventListener("mouseout", () => {
     welcome.style.transform = "scale(1)";
 });
+
+myButton.addEventListener("click", () => {
+    window.location.href = "https://reiwa.co/";
+});
