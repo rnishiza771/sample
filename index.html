@@ -1,10 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-    <title>My First Website</title>
+    <meta charset="UTF-8">
+    <title>GitHub PagesでWebサイト公開方法</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 10px;
+        }
+        h1, h2, h3 {
+            margin-top: 1em;
+        }
+        dl {
+            margin: 20px 0;
+        }
+        dt {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        dd {
+            margin: 0 0 10px 20px;
+        }
+        hr {
+            margin: 40px 0;
+        }
+    </style>
 </head>
 <body>
     <h1>Welcome to My Website!</h1>
     <p>This is my first GitHub Pages site. Prepared by toyonishi</p>
+
+    <h2>GitHub Pagesを使ったWebサイト公開手順</h2>
+    <ol>
+        <li><strong>GitHubアカウントを作成</strong><br>
+            <ul>
+                <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub公式サイト</a>にアクセス</li>
+                <li>ユーザー名、メールアドレス、パスワードを入力し、アカウントを作成</li>
+                <li>メール認証を行い、アカウントの有効化</li>
+            </ul>
+        </li>
+        <li><strong>リポジトリを作成</strong><br>
+            <ul>
+                <li>GitHubにログイン後、右上の「＋」→「New repository」を選択</li>
+                <li>Repository nameを入力（例：<code>my-website</code>）</li>
+                <li>「Public」を選択し、「Add a README file」にチェック</li>
+                <li>「Create repository」をクリック</li>
+            </ul>
+        </li>
+        <li><strong>Webサイト用のファイルを追加</strong><br>
+            <ul>
+                <li>リポジトリ内で「Add file」→「Create new file」を選択</li>
+                <li>ファイル名に<code>index.html</code>を指定</li>
+                <li>HTMLコードを入力し、「Commit new file」で保存</li>
+            </ul>
+        </li>
+        <li><strong>GitHub Pagesの有効化</strong><br>
+            <ul>
+                <li>リポジトリの「Settings」タブをクリック</li>
+                <li>左メニューから「Pages」を選択</li>
+                <li>「Source」で<code>main</code>ブランチと<code>/(root)</code>を選び「Save」</li>
+                <li>上部に表示されたURL（例：<code>https://username.github.io/my-website</code>）でアクセス可能</li>
+            </ul>
+        </li>
+        <li><strong>公開サイトを確認</strong><br>
+            <ul>
+                <li>ブラウザで表示されたURLにアクセスし、サイトが表示されることを確認</li>
+            </ul>
+        </li>
+    </ol>
+
+    <hr>
+
+    <h2>関連用語解説</h2>
+    <dl>
+        <dt>GitHub</dt>
+        <dd>ソースコードを管理する場所（今はGitHub≒gitと認識してOK）。</dd>
+
+        <dt>リポジトリ（Repository）</dt>
+        <dd>GitHubの機能。ソースコードを管理する箱のこと。プロジェクトごとに分けて管理するイメージ。</dd>
+
+        <dt>コミット（Commit）</dt>
+        <dd>変更をリポジトリに反映すること。変更履歴の一区切りを作る作業。</dd>
+
+        <dt>コミット履歴（Commit History）</dt>
+        <dd>これまで行ったコミット（変更記録）の履歴。</dd>
+
+        <dt>ブランチ（Branch）</dt>
+        <dd>変更を分岐させるための仕組み。ブランチを切って異なる開発や修正を並行して行う。</dd>
+
+        <dt>github flow</dt>
+        <dd>シンプルなブランチ運用手法の一つ。メインブランチと機能ブランチを使って開発を進める。</dd>
+
+        <dt>マージ（Merge）</dt>
+        <dd>ブランチを統合すること。一方のブランチでの変更をメインや別のブランチに取り込む。</dd>
+
+        <dt>プルリクエスト（Pull Request）</dt>
+        <dd>ブランチの変更をメインブランチなどにマージするよう依頼する機能。レビューや承認のプロセスを踏む。</dd>
+
+        <dt>コンフリクト（競合）</dt>
+        <dd>マージ時に変更内容がぶつかること。自動でマージできない場合は手動で調整が必要。</dd>
+
+        <dt>markdown</dt>
+        <dd>HTMLより簡易的に書式が記述できる言語。<br/>を書く必要なく、改行を入れるだけで改行など、簡易な記法が可能。</dd>
+
+        <dt>GitHub Pages</dt>
+        <dd>GitHubの便利機能。リポジトリで管理しているHTMLをそのままウェブサイトとして表示してくれる。</dd>
+    </dl>
+
+    <hr>
+
+    <p>以上の内容を参考に、GitHub PagesでWebサイト公開をお試しください！</p>
 </body>
 </html>
