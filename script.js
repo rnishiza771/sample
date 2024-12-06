@@ -23,6 +23,11 @@ welcome.addEventListener("mouseout", () => {
     welcome.style.transform = "scale(1)";
 });
 
-myButton.addEventListener("click", () => {
-    window.location.href = "https://reiwa.co/";
+document.addEventListener("DOMContentLoaded", () => {
+    const myButton = document.getElementById("myButton");
+    if (myButton) {
+        myButton.addEventListener("click", () => {
+            window.location.href = "https://reiwa.co/";
+        });
+    }
 });
