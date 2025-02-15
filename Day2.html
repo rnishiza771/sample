@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>動きのあるWebページ</title>
+  <!-- head内にJavaScriptを書くことも可能です -->
+  <script>
+    // ボタンがクリックされたときに呼ばれる関数
+    function showMessage() {
+      // アラートでメッセージを表示する例
+      alert("こんにちは！ボタンがクリックされました。");
+      // ページ内の要素を操作してメッセージを表示する例
+      document.getElementById("message").innerHTML = "こんにちは！画面に表示されたメッセージです。";
+    }
+  </script>
+</head>
+<body>
+  <h1>動きのあるWebページの例</h1>
+  <!-- ボタンにクリック時の動作を設定 -->
+  <button onclick="showMessage()">メッセージを表示</button>
+  <!-- ここにJavaScriptでメッセージを表示します -->
+  <p id="message"></p>
+</body>
+</html>
